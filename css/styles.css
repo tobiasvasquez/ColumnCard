@@ -1,0 +1,94 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 50px auto;
+
+}
+.card__car__img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.card__car__title{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    width: 75%;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+.card__car__description{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 75%;
+    margin: 0px auto 30px auto;
+    line-height: 25px;
+}
+.card__car__learn{
+    padding: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(31, 77%, 52%);
+    border-radius: 50px;
+    border-color: transparent;
+    width: 150px;
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.card__car--orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+}
+.card__car--cyan{
+    background-color: hsl(184, 100%, 22%);
+}
+.card__car--darkcyan{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+.card__car__learn--cyan{
+    color: hsl(184, 100%, 22%);
+}
+.card__car__learn--darkcyan{
+    color: hsl(179, 100%, 13%);
+}
+.attribution{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(179, 100%, 13%);
+    margin: 0 auto;
+}
+@media(min-width:768px){
+    .card{
+        flex-direction: row;
+        width: 52%;
+        margin: 200px auto 200px auto;
+    }
+    .card__car{
+        word-spacing: 5px;
+    }
+    .card__car__description{
+        margin-bottom: 100px;
+    }
+    .card__car__learn{
+        margin-bottom: 50px;
+        margin-left: 60px;
+    }
+    .card__car--orange{
+        border-radius: 10px 0px 0px 10px;
+    }
+    .card__car--darkcyan{
+        border-radius: 0px 10px 10px 0px;
+    }
+    .attribution{
+        text-align: center;
+    }
+}
